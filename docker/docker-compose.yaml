@@ -1,0 +1,11 @@
+phalcon-template:
+  build: web/
+  tty: true
+  ports:
+    - "8099:80"
+  volumes:
+    - ../:/var/www/html
+  environment:
+    ENVIRONMENT: docker
+  container_name: phalcon-template
+
